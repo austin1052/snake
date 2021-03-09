@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="snake.css" />
+    <script defer src="snake.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Snake</title>
+  </head>
+  <body>
+    <h1 class="game-title">Snake</h1>
+    <!-- <div class="score-counter">score:</div> -->
+    <main>
+      <div class="score-counter">Score: 0</div>
+      <div class="screen">
+        <div class="game"></div>
+        <!-- <div class="high-scores"></div> -->
+        <div class="start-screen open">
+          <div class="content">
+            <button class="start-game">
+              <span>Start</span>
+            </button>
+            <div class="directions">
+              Use the arrow keys to move the snake and collect the food. Do not
+              let the snake run into itself or the walls.
+            </div>
+            <button class="view-scores">
+              <span>View High Scores</span>
+            </button>
+          </div>
+        </div>
+        <div class="high-scores">
+            <h1>High Scores</h1>
+            <div class="list"></div>
+            <button class="close-scores">Go Back</button>
+        </div>
+        <div class="game-over">
+            <div class="content">
+            <h1>Game Over!</h1>
+            <div class="final-score">Your Score:</div>
+            <button class="close-game-over">Close</button>
+        </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
