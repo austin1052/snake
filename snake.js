@@ -7,6 +7,7 @@ const defaultHighScores = [
   ["Zack", 60],
 ];
 
+
 let highScores,
   currentHead,
   foodLocation,
@@ -74,6 +75,7 @@ function buildGameBoard() {
 }
 
 function renderGameBoard() {
+  $(".game").empty();
   gameBoard.forEach((row, rIdx) => {
     row.forEach((column, cIdx) => {
       if (column === "o") {
@@ -158,7 +160,7 @@ $("body").keydown(function updateDirection(event) {
 function updateGame(x, y) {
   isGameOver();
   moveSnake(x, y);
-  $(".game").empty();
+  // $(".game").empty();
   renderGameBoard();
 }
 
@@ -177,12 +179,16 @@ function processTick() {
   updateGame(x, y);
 }
 
-function startGame() {
-  buildGameBoard();
-  renderGameBoard();
-  intervalID = setInterval(processTick, 100);
-  $(".start-screen").removeClass("open");
+function loadGame() {
+	buildGameBoard();
+	renderGameBoard();
+	startGame();
+	$(".start-screen").removeClass("open");
   $(".game").addClass("started");
+}
+
+function startGame() {
+  intervalID = setInterval(processTick, 100);
 }
 
 function stopGame() {
@@ -269,7 +275,8 @@ bootstrap();
 //clicks
 
 $(".start-game").click(function () {
-  startGame();
+  // startGame();
+  loadGame();
 });
 
 $(".view-scores").click(function () {

@@ -5,6 +5,10 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+body {
+  background: grey;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -20,15 +24,15 @@ main {
 
 .game {
   background: black;
-  height: 40rem;
-  width: 40rem;
+  height: 50rem;
+  width: 50rem;
 }
 
 /* start screen */
 
 .start-screen.open {
   position: absolute;
-  top: 15.5rem;
+  top: 20rem;
   left: 0;
   right: 0;
   display: flex;
