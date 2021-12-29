@@ -13,7 +13,10 @@ main {
   display: flex;
   flex-direction: column;
 	align-items: center;
-	justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* margin: auto; */
 }
 
 .game-title {
@@ -24,15 +27,15 @@ main {
 
 .game {
   background: black;
-  height: 50rem;
-  width: 50rem;
+  height: 40rem;
+  width: 40rem;
 }
 
 /* start screen */
 
 .start-screen.open {
   position: absolute;
-  top: 20rem;
+  top: 15rem;
   left: 0;
   right: 0;
   display: flex;

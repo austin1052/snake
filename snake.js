@@ -8,6 +8,7 @@ const defaultHighScores = [
 ];
 
 
+
 let highScores,
   currentHead,
   foodLocation,
