@@ -1,10 +1,10 @@
 //variables
 
 const defaultHighScores = [
-  ["Austin", 30],
-  ["Paige", 40],
-  ["Amanda", 70],
-  ["Zack", 60],
+  ["Lawrence", 136],
+  ["Brooklyn", 99],
+  ["Jay", 50],
+  ["Willoughby", 60],
 ];
 
 

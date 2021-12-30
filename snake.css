@@ -6,8 +6,7 @@
 }
 
 body {
-  /* background: grey; */
-  background: pink;
+  background: grey;
 }
 
 main {
@@ -17,7 +16,6 @@ main {
   justify-content: center;
   width: 100%;
   height: 100%;
-  /* margin: auto; */
 }
 
 .game-title {
