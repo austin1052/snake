@@ -5,6 +5,7 @@ const defaultHighScores = [
   ["Brooklyn", 99],
   ["Jay", 50],
   ["Willoughby", 60],
+  ["Austin", 26]
 ];
 
 
